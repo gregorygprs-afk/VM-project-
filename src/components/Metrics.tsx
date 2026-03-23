@@ -71,7 +71,7 @@ const StatItem = ({ stat, index }: { stat: typeof stats[0], index: number, key?:
           <h4 className="text-xl md:text-2xl font-light text-brand-white/80">{stat.description}</h4>
         </div>
         <div className="flex items-baseline gap-2">
-          <span className="text-6xl md:text-9xl font-black tracking-tighter text-brand-white">
+          <span className="text-3xl md:text-5xl font-light tracking-tighter text-brand-white">
             <RollingNumber value={stat.value} />{stat.suffix}
           </span>
         </div>

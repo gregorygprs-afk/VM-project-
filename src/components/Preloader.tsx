@@ -70,7 +70,7 @@ export const Preloader = ({ onComplete }: { onComplete: () => void }) => {
             GREG SILLVA
           </motion.div>
         </h1>
-        <div className="text-brand-white/20 font-mono text-5xl md:text-8xl font-black tracking-tighter">
+        <div className="text-brand-white/20 font-mono text-2xl md:text-4xl font-light tracking-tighter">
           {Math.floor(progress).toString().padStart(3, '0')}%
         </div>
       </div>
