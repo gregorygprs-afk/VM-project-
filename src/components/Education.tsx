@@ -42,13 +42,13 @@ export const Education = () => {
         {pillars.map((pillar, index) => (
           <div key={index} className="px-6 md:px-24">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-end">
-              <div className="overflow-hidden">
+              <div className="overflow-hidden py-2">
                 <motion.h3 
-                  initial={{ y: "100%" }}
-                  whileInView={{ y: 0 }}
+                  initial={{ y: "100%", opacity: 0 }}
+                  whileInView={{ y: 0, opacity: 1 }}
                   transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
                   viewport={{ once: false, amount: 0.1 }}
-                  className="text-4xl md:text-7xl font-bold tracking-tighter"
+                  className="text-4xl md:text-7xl font-black tracking-tighter text-brand-white uppercase"
                 >
                   {pillar.title}
                 </motion.h3>
