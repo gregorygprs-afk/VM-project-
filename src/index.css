@@ -33,6 +33,11 @@
   color: transparent;
 }
 
+.outline-text-orange {
+  -webkit-text-stroke: 1px #C72A09;
+  color: transparent;
+}
+
 .mask-reveal {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }

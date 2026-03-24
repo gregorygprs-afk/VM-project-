@@ -48,16 +48,26 @@ const steps = [
 export const Process = () => {
   return (
     <section className="min-h-screen bg-brand-black py-32 px-6 md:px-24">
-      <motion.span 
+      <div className="mb-32 overflow-hidden py-4">
+        <motion.h2 
+          initial={{ y: "100%", opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
+          viewport={{ once: false, amount: 0.1 }}
+          className="text-6xl md:text-[10vw] font-black tracking-tighter uppercase leading-[0.85] text-brand-white"
+        >
+          O PROCESSO <br />
+          <span className="text-brand-orange">// METODOLOGIA</span>
+        </motion.h2>
+      </div>
+
+      <motion.div 
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
+        transition={{ duration: 1, delay: 0.8 }}
         viewport={{ once: false, amount: 0.1 }}
-        className="text-brand-orange text-xs uppercase tracking-[0.4em] mb-20 block"
+        className="relative"
       >
-        O Processo // Metodologia
-      </motion.span>
-
-      <div className="relative">
         {/* Vertical Line */}
         <div className="absolute left-0 top-0 w-[1px] h-full bg-brand-white/10 hidden md:block" />
 
@@ -98,7 +108,7 @@ export const Process = () => {
             </motion.div>
           ))}
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };

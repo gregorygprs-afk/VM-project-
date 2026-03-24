@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'motion/react';
 
 export const About = () => {
-  const text = "Crescer e expandir da trabalho, e eu estou aqui pra facilitar pra você!";
+  const text = "Acredite em mim, copiar ideias legais ou montar vitrines porque viu uma inspiração legal, não são premissas pra fazer você vender! Eu quero ajudar a você ser a inspiração!";
   const words = text.split(" ");
 
   return (
